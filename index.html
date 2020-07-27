@@ -30,10 +30,9 @@
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><i class="fa fa-address-card fa-lg"></i>Contact</a></li>
                 </ul>
                 <span class="navbar-text">
-                <a data-toggle="modal" data-target="#loginmodal">
-                    <span class="fa fa-sign-in">Longin</span></a>
+                <a id="login"><span class="fa fa-sign-in">Longin</span></a>
                 </span>
-             </div>
+            </div>
       </div>
     </nav>
     <div id="loginmodal" class="modal fade" role="dialog">
@@ -140,9 +139,8 @@
                    
                     <img class="img-fluid col-6" src="img/logo.png">
                     <div class="col-12 col-sm align-self-center">
-                        <button class="btn btn-sm btn-warning ml-auto">
-                            <a class="nav-link" data-toggle="modal"  
-                           href="#bookingmodal">Reserve Table</a>
+                        <button id="bookButton" class="btn btn-sm btn-warning ml-auto">
+                              Reserve Table
                         </button>
                     </div>
                
@@ -291,33 +289,11 @@
            </div>
         </div>
     </footer>
-       <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
-       <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-       <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
-       <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-       <script>
-         $(document).ready(function(){
-             $("#mycarousel").carousel({interval : 500});
-             $("#carouselButton").click(function(){
-                 if($("#carouselButton").children("span").hasClass("fa fa-pause"))
-                    {
-                    $("#mycarousel").carousel("pause");
-                    $("#carouselButton").children("span").removeClass("fa fa-pause");
-                    $("#carouselButton").children("span").addClass("fa fa-play");
-                    }
-                    else if($("#carouselButton").children("span").hasClass("fa fa-play"))
-                    {
-                    $("#mycarousel").carousel("cycle");
-                    $("#carouselButton").children("span").removeClass("fa fa-play");
-                    $("#carouselButton").children("span").addClass("fa fa-pause");
-
-                    }
-                
-             });
-         
-          
-         });
-       </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
      
         
 
